@@ -3,7 +3,6 @@ variable_names = []
 with open("config/settings.py", "r") as f:
     content = f.read()
 
-
 for line in content.split("\n"):
     if 'env(' in line:
         env_start = line.find('env(')
